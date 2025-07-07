@@ -1,0 +1,37 @@
+{
+  "name": "notion-langchain-telegram-bot",
+  "version": "1.0.0",
+  "description": "A Telegram chatbot that searches and provides answers from Notion database using LangChain",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts",
+    "watch": "tsc --watch",
+    "clean": "rm -rf dist"
+  },
+  "keywords": [
+    "telegram",
+    "bot",
+    "langchain",
+    "notion",
+    "typescript"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@langchain/core": "^0.2.0",
+    "@langchain/openai": "^0.1.0",
+    "@notionhq/client": "^2.2.15",
+    "dotenv": "^16.4.5",
+    "langchain": "^0.2.0",
+    "node-telegram-bot-api": "^0.66.0",
+    "notion-to-md": "^3.1.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.7",
+    "@types/node-telegram-bot-api": "^0.64.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
+  }
+}
